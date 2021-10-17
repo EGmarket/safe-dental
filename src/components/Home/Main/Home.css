@@ -2,6 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .header img {
@@ -72,6 +74,24 @@ body {
 }
 
 
+/* team page css  */
+
+.book-now-container {
+    background-color: #64eeb4;
+    height: 300px;
+}
+
+.book-now {
+    margin-top: -14%;
+}
+
+.footer-bg {
+    background-color: #f1f5f3;
+    padding: 30px;
+    border-top: 2px solid slateblue;
+}
+
+
 /* Responsive  */
 
 @media only screen and (max-width: 600px) {
@@ -80,5 +100,8 @@ body {
         left: 0;
         right: 0;
         width: 100%;
+    }
+    .responsive-img {
+        width: 50%;
     }
 }

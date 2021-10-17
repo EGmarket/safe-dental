@@ -27,9 +27,9 @@ const Specialized = () => {
               </Card>
             </div>
           </div>
-          <div className="col-md-8 mt-5">
+          <div className="col-md-8 mt-5 responsive-img">
             <img
-              height="550px"
+              width="100%"
               src="https://i.imgur.com/be2Y6SW.jpg"
               alt=""
               srcset=""
