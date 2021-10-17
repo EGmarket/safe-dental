@@ -1,3 +1,9 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header img {
     position: relative;
     left: 0;
@@ -46,6 +52,23 @@
 .smile-text {
     margin-left: 15%;
     margin-top: -3%;
+}
+
+
+/* Service page css  */
+
+.comitted-text {
+    margin-top: px;
+}
+
+
+/* Specialized page css  */
+
+.nervous {
+    margin-top: 280px;
+    position: relative;
+    background-color: #64eeb4;
+    height: 200px;
 }
 
 
