@@ -56,20 +56,12 @@ const useFirebase = () => {
 
     // Sign In With Github
     const signInUsingGitHub = () =>{
-        signInWithPopup(auth, gitHubProvider)
-        .then(result =>{
-            setUser(result.user);
-        })
-        .catch(error => {
-            setError(error.message)
-        })
+        return signInWithPopup(auth, gitHubProvider)
     }
     // Sign In with Facebook
     const signInUsingFacebook = () =>{
-        signInWithPopup(auth, facebookProvider)
-        .then(result => {
-            setUser(result.user)
-        })
+       return signInWithPopup(auth, facebookProvider)
+        
     }
 
     const logout = () => {

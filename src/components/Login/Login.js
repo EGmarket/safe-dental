@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../hooks/useAuth";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGoogle,
+  faGithub,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -43,9 +49,24 @@ const Login = () => {
   const handleGoogleLogin = () => {
     signInUsingGoogle().then((result) => {
       history.push(redirect_uri);
-    });
+    })
+    .catch(error => {
+      console.log(error.message);
+    })
+    
   };
 
+  // Handle Github Login
+  const handleGithubLogin = () => {
+    signInUsingGitHub().then((result) => {
+      history.push(redirect_uri);
+    })
+    .catch(error => {
+      console.log(error.message);
+    })
+  };
+
+ 
   return (
     <div className="container w-50">
       <Row >
@@ -99,9 +120,32 @@ const Login = () => {
       </Row>
 
       <div className="mt-5 d-flex justify-content-center">
-        <Button className="mx-2" onClick={handleGoogleLogin}>
-          Google Sign In
-        </Button>
+        
+        <div className="d-flex">
+        <h3>Sign In With</h3>
+        <button
+          className="btn btn-dark mx-2 d-flex justify-content-center"
+          onClick={handleGoogleLogin}
+        >
+          
+          <FontAwesomeIcon
+            icon={faGoogle}
+            size="2x"
+            className="text-danger"
+          />
+          <span className="mx-4 mt-1">Google Sign In</span>
+        </button>
+        <button
+          className="btn btn-secondary mx-2 d-flex justify-content-center"
+          onClick={handleGithubLogin}
+          >
+
+          <FontAwesomeIcon icon={faGithub} size="2x" className="text-dark" />
+          <span className="mx-4 mt-1">Github Sign In</span>
+        </button>
+       
+        <br />
+      </div>
       </div>
     </div>
   );

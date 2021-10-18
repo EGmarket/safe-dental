@@ -30,7 +30,7 @@ return (
       </div>
       <Row xs={1} md={4} lg={4}>
       {
-          members.map(member => <Team
+          members.slice(0,4).map(member => <Team
           
             key = {member.key}
             member = {member}

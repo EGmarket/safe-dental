@@ -10,6 +10,8 @@ import Login from './components/Login/Login';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import TeamDetails from './components/TeamDetails/TeamDetails';
+import NotFound from "./NotFound/NotFound";
+import FullTeams from './components/FullTeams/FullTeams';
 
 function App() {
   return (
@@ -26,6 +28,9 @@ function App() {
       <Route  path="/services">
         <Services></Services>
       </Route>
+      <Route exact path="/teams">
+        <FullTeams></FullTeams>
+      </Route>
       <PrivateRoute  path="/service/:serviceId">
         <ServiceDetail></ServiceDetail>
       </PrivateRoute>
@@ -34,6 +39,9 @@ function App() {
       </PrivateRoute>
       <Route  path="/login">
         <Login></Login>
+      </Route>
+      <Route  path="*">
+       <NotFound></NotFound>
       </Route>
     </Switch>
     <Footer/>
