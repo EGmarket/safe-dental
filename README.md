@@ -12,6 +12,7 @@ You Can Check This Live test Site [Safe Dental](https://egmarket-f2d69.web.app/)
 * and much work has been done 
 
                    * We are regularly updating
+                   * ENV file will use in next update for secure firebase.config
                    * This site will be more Optimized very soon
                    * We will use react hook form in next update
 
