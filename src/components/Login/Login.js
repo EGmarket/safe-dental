@@ -13,6 +13,7 @@ const Login = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error,setError] = useState('')
   const {
     signInUsingGoogle,
     signInUsingGitHub,
@@ -33,8 +34,12 @@ const Login = () => {
   // handle event with email and password
   const handleRegistration = (e) => {
     e.preventDefault();
+    if(password.length < 6){
+      setError('password Must be 6 Digit long')
+      return;
+    }
     console.log("Registration Clicked");
-    isLogin ? processLogin(email, password) : createNewUser(email, password);
+    isLogin ? processLogin(email, password) : createNewUser(email, password , setError(''));
   };
 
   const handleEmail = (e) => {
@@ -112,6 +117,7 @@ const Login = () => {
                 label="Already User ?"
               />
             </Form.Group>
+            <h2 className="bg-danger text-white w-50">{error}</h2>
             <Button variant="primary" type="submit">
               {isLogin ? "Login" : "Register"}
             </Button>
