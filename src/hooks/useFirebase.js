@@ -15,7 +15,7 @@ const useFirebase = () => {
 
     // Sign In Using Email and Password
     const processLogin = (email,password) => {
-        signInWithEmailAndPassword(auth, email, password)
+        return signInWithEmailAndPassword(auth, email, password)
         .then(result =>{
           const user = result.user;
           setUser(user)
@@ -44,14 +44,14 @@ const useFirebase = () => {
       }
     //Sign In With Google
     const signInUsingGoogle = () =>{
-        signInWithPopup(auth, googleProvider)
-        .then(result => {
-            console.log(result.user);
-            setUser(result.user);
-        })
-        .catch(error => {
-            setError(error.message)
-        })
+        return signInWithPopup(auth, googleProvider)
+        // .then(result => {
+        //     console.log(result.user);
+        //     setUser(result.user);
+        // })
+        // .catch(error => {
+        //     setError(error.message)
+        // })
     }
 
     // Sign In With Github

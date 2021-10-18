@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { useHistory, useLocation } from "react-router";
 import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
@@ -13,6 +14,10 @@ const Login = () => {
     processLogin,
     createNewUser
   } = useAuth();
+
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_uri = location.state?.from || '/home';
 
   // ToggleLogin
   const toggleLogin = e =>{
@@ -33,6 +38,14 @@ const Login = () => {
 
   const handlePassword = e =>{
     setPassword(e.target.value)
+  }
+
+  // Handle Google Login
+  const handleGoogleLogin = () => {
+    signInUsingGoogle()
+    .then(result => {
+      history.push(redirect_uri);
+    })
   }
 
   return (
@@ -84,7 +97,7 @@ const Login = () => {
       </Form>
 
       <div className="mt-5">
-      <Button className="mx-2" onClick={signInUsingGoogle}>Google Sign In</Button>
+      <Button className="mx-2" onClick={handleGoogleLogin}>Google Sign In</Button>
       </div>
     </div>
   );

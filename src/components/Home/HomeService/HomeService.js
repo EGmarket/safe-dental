@@ -1,7 +1,8 @@
 import { Button, Card, CardGroup, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const HomeService = (props) => {
-  const {title, img,desc} = props.service;
+  const {title, img,desc,key} = props.service;
     return (
         <div>
             <Col>
@@ -14,7 +15,10 @@ const HomeService = (props) => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button className="mx-5 btn-lg">Details</Button>
+                <Link to={`/service/${key}`}>
+                  <Button className="mx-5 btn-lg">Details</Button>
+                </Link>
+                
               </Card.Footer>
             </Card>
             </Col>

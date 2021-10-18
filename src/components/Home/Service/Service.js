@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Card, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
     console.log(props.service)
-    const {title, img,desc} = props.service;
+    const {title, img,desc,key} = props.service;
     return (
         <div>
             <Col>
@@ -16,7 +17,9 @@ const Service = (props) => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+              <Link to={`/service/${key}`}>
+                  <Button className="mx-5 btn-lg">Details</Button>
+                </Link>
               </Card.Footer>
             </Card>
             </Col>

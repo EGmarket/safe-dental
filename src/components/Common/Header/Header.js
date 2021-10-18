@@ -17,7 +17,7 @@ const Header = () => {
                    <div className="nav-cart">
                    <FormOutlined />
                    </div>
-                   <NavLink to='/service' className="nav-route">
+                   <NavLink to='/services' className="nav-route">
                        Services
                    </NavLink>
                    <NavLink to='/booking' className="nav-route">

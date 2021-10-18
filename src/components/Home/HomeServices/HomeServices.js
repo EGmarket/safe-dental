@@ -23,7 +23,7 @@ const HomeServices = () => {
             </div>
           </div>
           <div className="col-md-4 mt-5">
-            <Link to="/service">
+            <Link to="/services">
               <button
                 type="button"
                 class="btn btn-info fw-bold text-white fs-3">
