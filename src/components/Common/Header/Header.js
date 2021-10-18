@@ -30,7 +30,7 @@ const Header = () => {
                         Sing-up
                    </NavLink> */}
                    {
-                        user?.email && <span className="mx-2">Hello, {user.displayName}</span>
+                        user?.email && <span className="mx-2">Hello, {user.displayName || user.email} </span>
                     }
                     {user?.email  && <button onClick={logout}>Logout</button>}
                </div>
