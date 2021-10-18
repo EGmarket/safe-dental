@@ -2,7 +2,19 @@
 
 You Can Check This Live test Site [Safe Dental](https://egmarket-f2d69.web.app/).
 
-## Available Scripts
+## This Site Available Scripts
+* APPS DATA HAS BEEN STORED IN LOCALLY and Images From imguru
+* We  Used Fontawesome icon in this project  but in this project installed some other icon libary
+* If You want to learn Korean Language Easily then You can easily learn with our use
+* This site is responsive only for mobile divices and pc
+* Safe Dental is fully Authenticated by firebase
+* you can create and log in account by using email and password
+* and much work has been done 
+
+                   * We are regularly updating
+                   * This site will be more Optimized very soon
+                   * We will use react hook form in next update
+
 
 In the project directory, you can run:
 
