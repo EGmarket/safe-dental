@@ -1,0 +1,98 @@
+.book-tbl {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    margin-top: 5%;
+    padding-bottom: 20px;
+}
+
+ul {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li {
+    display: block;
+    float: left;
+    margin: 0 5px;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    color: rgb(53, 52, 52);
+    background: #FBCF61;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s
+}
+
+label:hover {
+    background: #00B4F1;
+}
+
+label:active {
+    transition: 0;
+    -webkit-transition: 0;
+    -webkit-filter: brightness(.8);
+}
+
+
+/* input {
+    display: none;
+} */
+
+input:checked+label {
+    background: #FF7541;
+    color: #fff;
+}
+
+input:checked+label {
+    animation: boom .5s;
+    -webkit-animation: boom .5s;
+}
+
+@keyframes boom {
+    25% {
+        transform: scale(1.25);
+    }
+}
+
+@-webkit-keyframes boom {
+    25% {
+        -webkit-transform: scale(1.25);
+    }
+}
+
+input:disabled+label {
+    color: #fff;
+    background: #f00;
+}
+
+.book-txt {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: #888;
+}
+
+.book-txt h2 {
+    color: #FF7541;
+}
+
+.note {
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+.note a {
+    color: #FF7541;
+    text-decoration: none;
+}
+
+.note a:hover {
+    text-decoration: underline;
+}
