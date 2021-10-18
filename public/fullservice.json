@@ -1,0 +1,69 @@
+[{
+        "key": "2021100301",
+        "title": "cure-patient",
+        "img": "https://i.imgur.com/O7APW6u.jpg",
+        "duration": "2 -4 Months",
+        "Fee": "$ 180",
+        "desc": "More advanced cases in need of surgical intervention are also seen. Patients during their visit to the Dental Clinic are educated about proper oral hygiene"
+
+    },
+
+    {
+        "key": "2021100302",
+        "title": "Dental Examination",
+        "img": "https://i.imgur.com/EAatIzC.jpg",
+        "duration": "2 Months",
+        "Fee": "$ 100",
+        "desc": "There are 2 parts to a regular dental visit – check up, or examination and the cleaning, or oral prophylaxis. At the dental check up your dental professional will check for cavities."
+
+    },
+
+    {
+        "key": "2021100303",
+        "title": "scaling and cleaning",
+        "img": "https://i.imgur.com/zDEfVQw.jpg",
+        "duration": "3 Months",
+        "Fee": "$ 320",
+        "desc": "Scaling and cleaning involves the removal of built-up debris from the teeth. This may include food particles, soft plaque (bacterial growth) or hard calculus"
+
+    },
+
+    {
+        "key": "2021100304",
+        "title": "Dental fissure sealants",
+        "img": "https://i.imgur.com/91uwwyG.jpg",
+        "duration": "4 Months",
+        "Fee": "$180",
+        "desc": "Sealants protect teeth from decay. Any tooth that has deep grooves or fissures can be treated, but the most commonly treated teeth are the molars and premolars."
+
+    },
+    {
+        "key": "2021100304",
+        "title": "Dental fissure sealants",
+        "img": "https://i.imgur.com/91uwwyG.jpg",
+        "duration": "4 Months",
+        "Fee": "$180",
+        "desc": "Sealants protect teeth from decay. Any tooth that has deep grooves or fissures can be treated, but the most commonly treated teeth are the molars and premolars."
+
+    },
+    {
+        "key": "2021100305",
+        "title": "Root canal",
+        "img": "https://i.imgur.com/Lu4LoNa.jpg",
+        "duration": "4 Months",
+        "Fee": "$580",
+        "desc": "Root canal treatment is a procedure that replaces a tooth’s damaged or infected pulp with a filling. The ‘pulp' (often called the nerve of the tooth) is sensitive tissue."
+
+    },
+    {
+        "key": "2021100304",
+        "title": "tooth removal",
+        "img": "https://i.imgur.com/hpAiudb.jpg",
+        "duration": "4 Months",
+        "tutionFee": "$180",
+        "desc": "Modern dentistry and oral health practitioners aim to preserve natural teeth. However, extensively damaged or badly decayed teeth may need to be removed."
+
+    }
+
+
+]

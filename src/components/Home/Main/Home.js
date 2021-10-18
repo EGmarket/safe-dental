@@ -1,15 +1,16 @@
 import React from 'react';
 import './Home.css'
 import Banner from '../Banner/Banner';
-import Services from '../Services/Services';
 import Specialized from '../Specialized/Specialized';
 import Teams from '../Teams/Teams';
+import HomeServices from '../HomeServices/HomeServices';
+
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Services></Services>
+            <HomeServices></HomeServices>
             <Specialized></Specialized>
             <Teams></Teams>
         </div>

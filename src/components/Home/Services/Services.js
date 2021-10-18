@@ -1,7 +1,17 @@
-import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Card, CardGroup, Row } from "react-bootstrap";
+import HomeService from "../HomeService/HomeService";
+import Service from "../Service/Service";
 
 const Services = () => {
+  const [services,setServices] = useState([]);
+
+    useEffect(()=>{
+        fetch('./fullservice.json')
+        .then(res => res.json())
+        .then(data => setServices(data))
+    },[])
+
   return (
     <div>
       <div className="container mt-3">
@@ -18,53 +28,21 @@ const Services = () => {
             </button>
           </div>
         </div>
-        <div className="row">
-          <CardGroup>
-            <Card>
-              <Card.Img variant="top" src="https://i.imgur.com/1HoG69j.png" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="https://i.imgur.com/ZdAbwfE.jpg" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This card has supporting text below as a natural lead-in to
-                  additional content.{" "}
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-            <Card>
-              <Card.Img variant="top" src="https://i.imgur.com/41xOPOP.jpg" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
-            </Card>
-          </CardGroup>
+        <Row xs={1} md={4} lg={4}>
+        {
+            services.map(service => <Service
+            
+              key = {service.key}
+              service = {service}
+            >
+
+            </Service>)
+          }
+        </Row>
+
         </div>
       </div>
-    </div>
+    
   );
 };
 

@@ -59,9 +59,15 @@ body {
 
 /* Service page css  */
 
-.comitted-text {
-    margin-top: px;
+.service:hover {
+    transform: translate(-2%, -2%);
+    transition: 0.5s;
 }
+
+
+/* .comitted-text {
+    margin-top: 2px;
+} */
 
 
 /* Specialized page css  */
