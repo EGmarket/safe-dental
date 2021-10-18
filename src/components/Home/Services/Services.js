@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardGroup, Row } from "react-bootstrap";
-import HomeService from "../HomeService/HomeService";
+import {  Row } from "react-bootstrap";
 import Service from "../Service/Service";
 
 const Services = () => {

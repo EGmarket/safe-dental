@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="header-content care-bg rounded shadow">
                 <h1 className="fw-bolder we-text">WE CARE</h1>
                 <h2 className="fw-bolder about-text">ABOUT YOU <span className="text-white">AND</span></h2>
-                <h1 className="fw-bolder smile-text text-white shadow">YOUR SIMLE</h1>
+                <h1 className="fw-bolder smile-text text-white shadow">YOUR SMILE</h1>
             </div>
             <div className="container  header-content-two">
                 <div className="row">

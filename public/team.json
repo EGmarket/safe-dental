@@ -1,12 +1,12 @@
 [{
         "key": "2021101001",
-        "Title": "Orthodontist",
+        "title": "Orthodontist",
         "img": "https://i.imgur.com/1HoG69j.png",
         "duration": "2 -4 Months",
         "doctors": "Mr. Lee",
         "visiting_time": "evening 7pm",
         "Fee": "$ 180",
-        "desc": "You may know orthodontists as the ones who install braces, but their care extends much farther beyond that. Generally speaking, orthodontists are concerned with righting misaligned teeth, jaw bones, and other supporting facial structures for both cosmetic and functional reasons."
+        "desc": "You may know orthodontists as the ones who install braces, but their care extends much farther beyond that. Generally speaking, orthodontists are concerned with righting misaligned teeth."
 
     },
 
@@ -18,7 +18,7 @@
         "visiting_time": "evening 8pm-11pm",
         "duration": "2 Months",
         "Fee": "$ 1000",
-        "desc": "Oral and maxillofacial surgeons focus on the hard and soft tissues found in and around the mouth. These tissues include the gums, cheeks, lips, hard palate, soft palate, tongue, and facial tissues."
+        "desc": "Oral and maxillofacial surgeons focus on the hard and soft tissues found in and around the mouth. These tissues include the gums, cheeks, lips, hard palate, soft palate,"
 
     },
 
@@ -29,8 +29,8 @@
         "duration": "3 Months",
         "doctors": "Mr. Ahmed",
         "visiting_time": "Night 9pm",
-        "tutionFee": "$ 320",
-        "desc": "Gums are the focus of periodontistry, and periodontists are concerned with preventing, diagnosing, and treating various gum issues"
+        "Fee": "$ 320",
+        "desc": "Gums are the focus of periodontistry, and periodontists are concerned with preventing, diagnosing, and treating various gum issues ,re concerned with righting misaligned teeth,the gums, cheeks, lips"
 
     },
 
@@ -41,8 +41,8 @@
         "duration": "4 Months",
         "doctors": "Mrs. HaLeen",
         "visiting_time": "evening",
-        "tutionFee": "$180",
-        "desc": "The inner part of the tooth, which is protected by the tooth’s hard enamel and inner layer of dentin, is found below the gumline and is known as the pulp."
+        "Fee": "$180",
+        "desc": "The inner part of the tooth, which is protected by the tooth’s hard enamel and inner layer of dentin, is found below the gumline and is known as the pulp. If it can be treated and preserved, this keeps the tooth alive  ,"
 
     }
 
