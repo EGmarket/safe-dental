@@ -7,6 +7,7 @@ initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider();
@@ -45,6 +46,7 @@ const useFirebase = () => {
     //Sign In With Google
     const signInUsingGoogle = () =>{
         return signInWithPopup(auth, googleProvider)
+        .finally(() => setIsLoading(false))
         // .then(result => {
         //     console.log(result.user);
         //     setUser(result.user);
@@ -57,6 +59,7 @@ const useFirebase = () => {
     // Sign In With Github
     const signInUsingGitHub = () =>{
         return signInWithPopup(auth, gitHubProvider)
+        .finally(() => setIsLoading(false))
     }
     // Sign In with Facebook
     const signInUsingFacebook = () =>{
@@ -75,7 +78,10 @@ const useFirebase = () => {
         onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user);
+            } else {
+              setUser({})
             }
+            setIsLoading(false)
         })
     }, []);
 
@@ -87,6 +93,7 @@ const useFirebase = () => {
         signInUsingFacebook,
         processLogin,
         createNewUser,
+        isLoading,
         logout
     }
 }
